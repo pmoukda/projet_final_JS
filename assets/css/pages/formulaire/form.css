@@ -1,0 +1,74 @@
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--taille-grand);
+    gap: var(--espacement-courant);
+    box-sizing: border-box;
+}
+
+[data-page="formulaire"] {
+    
+         /* étapes de progression*/ 
+     & form header > .etat-progression{
+            display: flex;
+            justify-content: center;
+            gap: 10rem;
+            align-items: center;
+            box-sizing: border-box;
+            padding: var(--espacement-courant);
+            margin-bottom: var(--espacement-large);
+            margin-top: var(--espacement-large);
+            font-weight: 600;
+            font-size: var(--taille-grand); 
+            
+            
+            &  > div{
+                background-color: #e5e0e068;
+                padding: 15px 25px;
+                border-radius: 30px;
+
+                &.active{
+                    background-color: var(--couleur-accent);
+                }
+            
+            }
+        }
+
+
+    /* les sections du formulaire*/
+    & section{
+        display: flex;
+        flex-wrap: wrap ;
+        gap: var(--espacement-petit);
+        box-sizing: border-box;
+        border: 5ch solid #93c3d3;
+        border-radius: 5px;
+        padding: 40px 40px 80px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 6px #00000080;
+        
+        /*occuper la pleine largeur*/
+        & > h2, h3{
+            flex-basis: 100%; 
+        }
+    }
+    & small{
+        font-style: italic;
+    }
+    
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

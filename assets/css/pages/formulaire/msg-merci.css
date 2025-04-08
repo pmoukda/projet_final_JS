@@ -1,0 +1,8 @@
+[data-page="formulaire"]{
+    /*message de remerciement*/
+    & .msg-merci > p{
+        font-size: var(--taille-grand2x);
+        padding: var(--espacement-petit);
+        text-align: center;
+    }
+}

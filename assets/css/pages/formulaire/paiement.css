@@ -1,0 +1,11 @@
+/* styliser la section paiement*/
+[data-page="formulaire"]{
+    & .paiement >.input-section{
+    min-width: 17%;
+    }
+
+    & .paiement div:nth-child(3),small{
+    font-size: 20px; 
+    flex-basis: calc(100%);
+    }
+}

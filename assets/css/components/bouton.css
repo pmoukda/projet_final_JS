@@ -1,0 +1,63 @@
+/***********************boutons de la page accueil***********************/
+.filtre{
+    display: inline-block;
+    box-sizing: border-box;
+    
+    & .bouton-tri{
+        cursor: pointer;
+        padding: 10px 15px;
+        margin-bottom: var(--espacement-petit);
+        background-color: var(--couleur-bouton);
+        border-radius: 20px;
+        text-align: center;
+        
+        &:hover{
+            background-color: var(--couleur-accent);
+        }
+    }
+}
+
+/***********************section bouton formulaire**********************************************************/
+
+.boutonForm-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;  
+}
+/* styliser boutons navigations*/
+.bouton{
+    background-color: var(--couleur-bouton);
+    max-width: 25ch;
+    padding: 20px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 600; 
+    
+    
+    &:hover{
+        background-color: var(--couleur-accent);
+    } 
+}
+
+/*styliser le bouton Réservé (submit)*/
+form input[type="submit"] {
+    
+    text-transform: uppercase;
+    background-color: #F3C623;
+    padding: 20px 80px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 5px 5px 8px rgb(69, 59, 59);
+    color: inherit;
+    font-size: inherit;
+    
+    /* désactiver le boutton submit si le formulaire n'est pas valide */
+    &:disabled {
+        background-color: lightgray;
+        color: darkgray;
+        pointer-events: none;
+    }
+    
+}

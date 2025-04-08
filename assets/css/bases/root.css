@@ -1,0 +1,51 @@
+:root{
+    /* couleurs générales*/
+    --couleur-texte:#04306e;
+    --couleur-primaire:#ffffff;
+    --couleur-secondaire:#000000;
+    --couleur-nav:#e5f1f2;
+    --couleur-bouton: #fadfbe;
+    --couleur-accent:#F3C623;
+
+    /*couleurs validation*/
+    --couleur-succes:#05a905;
+    --couleur-erreur:#ff0000;
+
+    /*couleurs inactif*/
+    --couleur-fond-desactive: #d3d3d3;
+    --couleur-police-desactive:#a9a9a9;
+
+    /* tailles*/
+    --taille-tres-petit: 14px;
+    --taille-petit: 16px;
+    --taille-regulier: 20px;
+    --taille-moyen: 22px;
+    --taille-grand: 24px;
+    --taille-tres-grand: 28px;
+    --taille-grand1x: 30px;
+    --taille-grand2x: 42px;
+    
+    /* espacements*/
+    --espacement-tres-petit: 5px;
+    --espacement-petit: 10px;
+    --espacement-courant: 20px;
+    --espacement-courant-moyen: 30px;
+    --espacement-moyen: 40px;
+    --espacement-mL: 50px;
+    --espacement-large: 60px;
+    --espacement-tres-large: 80px;
+    --espacement-petitRem: 1rem;
+    --espacement-regulierRem: 1.5rem;
+    --espacement-moyenRem: 2rem;
+    --espacement-largeRem: 3rem;
+    --espacement-xlRem: 4rem;
+}
+/* couleur pour thème nuit*/
+[data-mode="nuit"]{
+    --couleur-texte:#ffffff;
+    --couleur-primaire:#070729;
+    --couleur-secondaire:#ffffff;
+    --couleur-nav:#070729 ;
+    --couleur-bouton: #f2efec51;
+    --couleur-accent:#e15c41;      
+}

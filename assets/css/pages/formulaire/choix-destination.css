@@ -1,0 +1,15 @@
+[data-page = "formulaire"]{
+
+    /*largeur du conteneur des groupes input dans la section choix destination*/
+   & .choix-destination {
+
+        & > .input-section{
+            min-width: 30%;
+        } 
+        
+        & small{
+            flex-basis: 100%;  
+        } 
+    }
+
+}

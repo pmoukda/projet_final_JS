@@ -1,0 +1,30 @@
+/**************champs validations*********************************/
+
+[data-page="formulaire"]{
+    /* si le champ est invalide*/
+   & input:user-invalid, 
+    select:user-invalid,
+    input.msg-erreur{
+        border: 3px solid red;
+        background-color:rgba(250, 205, 212, 0.384);
+    }
+    
+    input:user-invalid ~.message-erreur, 
+    select:user-invalid ~.message-erreur
+    input.msg-erreur ~.message-erreur{
+        visibility: visible;
+    }
+    
+    /* Styliser si le champ est valide */
+    input:user-valid, select:user-valid {
+        border: 3px solid var(--couleur-succes);  
+    }
+
+    /*mettre en rouge et faire disparaitre le message d'erreur au début du formulaire*/
+    .message-erreur{ 
+        color:var(--couleur-erreur);
+        display: inline-block ; 
+        margin-top: var(--espacement-tres-petit);
+        visibility: hidden;    
+    }
+}

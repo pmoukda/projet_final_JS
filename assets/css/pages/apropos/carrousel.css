@@ -1,0 +1,96 @@
+[data-page="apropos"]{
+    
+    & .carrousel{
+        width: 100%;
+        
+        & .carrousel-liste{
+            max-width: 100%;
+            min-height: 45vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            & .carrousel-titre{
+                position: absolute;
+                z-index: 1;
+                background-color : var(--couleur-primaire); 
+                padding: 20px 30px;
+                border-radius: 8px;
+                animation: changerCouleur 10s ease-in-out infinite;
+                
+            }
+            
+            & .carrousel-items{
+                max-width: 100%;
+                min-height: 100% ;
+                position: absolute;
+                inset:0;
+                opacity: 0;
+                transition: 250ms opacity ease-in-out;
+                transition-delay: 250ms;
+              
+               
+                
+                & img{
+                    max-width: 100%;
+                    max-height:100%  ;
+                    object-fit: cover;
+                    object-position: center;
+                    box-shadow: 5px 5px 15px #3b3a3a ;
+                    top: 0;
+                    
+                }
+                &.active{
+                    opacity: 1;
+                    transition-delay: 0ms;
+                
+                } 
+            }
+        }
+        
+        &:hover [data-direction]
+        {
+            opacity: 1;
+        }  
+    }
+    
+    /*bouton direction carrousel*/
+    & [data-direction]{
+        position: absolute;
+        font-size: var(--espacement-tres-large);
+        background-color: #000000cc;
+        color: #fff;
+        padding: 10px;
+        bottom: 35%; 
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.4s ease-in; 
+      
+    }
+
+    /* positionner les boutons complètement à gauche et à droite sur l'image*/
+     & .boutonPrecedent{
+        left: 0;
+    }
+    
+    & .boutonSuivant{
+        right: 0;
+    } 
+
+
+}
+/* animations des titres de carrousel*/
+ @keyframes changerCouleur{
+    0%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.9;
+    }
+    100%{
+        background-color: #f7c4cc;
+        opacity: 0;
+    }
+   
+} 

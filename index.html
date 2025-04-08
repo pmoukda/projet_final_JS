@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moukda Phaengvixay">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/pages/accueil.js" type="module"></script>
+    <title>Accueil TP1</title>
+</head>
+<body data-page="accueil">
+    <header>
+        <nav class="nav-principale">
+            <div class="nav-liste">
+                <img class="logo" src="assets/img/SVG/logo.svg" alt="logo" >
+            </div>
+            <ul class="nav-liste">
+                <!--<li><a href=""></a></li>-->
+            </ul>
+            <ul class="mode-ecran">
+                <li data-mode-option="nuit">
+                   <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/bright-moon--v1.png" alt="bright-moon--v1"/>
+               </li>
+               <li data-mode-option="jour" class="active">
+                   <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/sun--v1.png" alt="sun--v1"/>
+               </li> 
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <div class="details">
+                <img class="detail__img" src="#" alt="#">
+                <h2 class="detail__pays"></h2>
+                <h3 class="detail__ville"></h3>
+                <p class="detail__description"></p>
+                <p class="detail__langue"></p>
+                <p class="detail__duree"></p>
+                <p class="detail__date"></p>
+                <p class="detail__tarif"></p>
+            </div>
+        </aside>
+        <section>
+            <article class="section-entete">
+                <h1>Vos destinations de rêve</h1>
+                <div class="filtre">
+                    <div class="bouton-tri" id="tri-alpha-croissant">Par ordre alphabéthique</div>
+                </div>
+                <div class="filtre">
+                    <div class="bouton-tri" id="tri-prix-filtres">Par prix filtrés</div>
+                </div>
+                <div class="filtre">
+                    <div class="bouton-tri" id="tri-ordre-decroissant">Par longue durée</div>
+                </div>
+            </article>
+            <article class="grille-destinations">
+          <!-- <div class="pays">
+                    <img src="assets/img/album/Australie.jpg" alt="">
+                    <h2>Nom</h2>
+                </div>-->
+            </article>
+        </section>
+    </main>
+    <footer>
+       <p>Moukda Phaengvixay &copy; 2025 Tous droits réservés</p>
+    </footer>
+</body>
+</html>

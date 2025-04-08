@@ -1,0 +1,25 @@
+[data-page= "accueil"]{
+     & .details{
+        display:flex;
+        flex-direction: column;
+        position:relative; 
+    
+        & img{
+            max-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    
+        & p{
+            max-width: 72ch; 
+           
+        }
+    }
+    
+    .detail__date{
+        cursor: pointer;
+    }
+    
+}
+
+

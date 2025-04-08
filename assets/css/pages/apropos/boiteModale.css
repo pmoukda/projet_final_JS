@@ -1,0 +1,117 @@
+
+/* conteneur boîte modale, en premier ,on le cache */
+.boite-modale{
+    box-sizing: border-box;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    visibility: hidden;
+    transition: visibility 0.6s;
+    z-index: 10;
+    
+    /* faire apparaitre la boite quand active avec une transition*/
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.6s ease-in-out;
+        
+        & .contenu-modale{
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+        }
+    }
+    /* mettre le background de la page foncé semi transparent avec une transition*/
+    & .superposition{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:#333333d3 ;
+        opacity: 1;
+        transition: opacity 0.6s 0.3s ease-out;
+        
+    }
+    /* styliser le contenu et  le positionner*/
+    & .contenu-modale{
+        opacity: 1;
+        max-width: 600px;
+        min-width: 300px;
+        padding: 30px;
+        background-color: var(--couleur-primaire);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, calc(-50% - 50px));/*faire descendre la boite modale d'en haut pour centrer dans l'écran et remonter une fois fermer avec l'effet de la transition*/
+        transition: opacity 0.6s ease-out, transform 0.6s ease-in-out;
+        
+        
+        & img{
+            border-radius: 10px;
+            object-fit: cover;
+            
+        }
+        
+        & h1{
+            border-top: 2px solid rgb(79, 57, 57);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        & span{
+            font-size: 24px;
+            font-style: oblique;
+            
+        }
+        
+        & p{
+            line-height: 1;
+            
+        }
+    }
+    /* styliser et positionner le bouter fermer de la boîte modale*/
+    &  .btnFermer-boite-modale{
+        font-size: 35px;
+        padding: 2px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #903434;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        box-shadow: 3px 3px 8px #000000e6;
+        
+    }
+    /* styliser le bouton offre*/
+    & .btn{
+        background-color: var(--couleur-accent) ;
+        padding: 10px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        box-shadow: 3px 3px 8px #332f2f;
+        border-radius: 5px;
+        cursor: pointer;
+       
+        &:hover{
+            
+            background-color: var(--couleur-bouton);
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Moukda Phaengvixay">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/pages/formulaire.js" type="module"></script>
+    <title>Travail pratique 2</title>
+</head>
+<body data-page="formulaire">
+    <header>
+        <nav class="nav-principale">
+            <div class="nav-liste">
+                <img class="logo" src="assets/img/SVG/logo.svg" alt="logo" >
+            </div>
+            <ul class="nav-liste">
+                <!--<li><a href=""></a></li>-->
+            </ul>
+            <ul class="mode-ecran">
+                <li data-mode-option="nuit">
+                   <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/bright-moon--v1.png" alt="bright-moon--v1"/>
+               </li>
+               <li data-mode-option="jour" class="active">
+                   <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/sun--v1.png" alt="sun--v1"/>
+               </li> 
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Formulaire de réservation</h1>
+        <form action="#" method="post">
+            <header>
+                <div class="etat-progression">
+                    <div id="etape1" data-etape="0">Étape 1</div>
+                    <div id="etape2" data-etape="1">Étape 2</div>
+                    <div id="etape3" data-etape="2">Étape 3</div>
+                    <div id="etape4" data-etape="3">Étape 4</div>
+                </div>
+            </header>
+            
+            <!--CHOIX DESTINATION----------->
+
+            <section class="choix-destination " data-section="0" >
+                <h2>Étape 1- Choix destination</h2> 
+                <small>* Les champs obligatoires</small>
+                <div class="input-section">
+                    <label for="dateDepart"> Date de Départ *</label>
+                    <input type="date" id="dateDepart" name="dateDepart" min="2025-03-20" max="2026-04-01" required>
+                    <span class="message-erreur">Veuillez choisir une date</span>
+                </div>
+                <div class="input-section">
+                    <label for="departDe">De * </label>
+                    <select name="departDe" id="departDe" required>
+                        <option value="">Choisir la ville</option>
+                        <option value="Montréal">Montréal</option>
+                        <option value="Toronto" >Toronto</option >
+                        <option value="Vancouver">Vancouver</option>
+                        <option value="Québec">Québec</option>
+                    </select>
+                    <span class="message-erreur">Veuillez choisir la ville</span>    
+                </div>
+                <div class="input-section">
+                    <label for="destination">À *</label>
+                    <select name="destination" id="destination" required >
+                        <option value="" >Destinations</option>
+                        <option value="Australie">Australie</option>
+                        <option value="France" >France</option>
+                        <option value="Grèce">Grèce</option>
+                        <option value="Indonésie">Indonésie</option>
+                        <option value="Japon">Japon</option>
+                        <option value="Polynésie Française">Polynésie Française</option>
+                    </select>
+                    <span class="message-erreur">Veuillez choisir une destination</span>
+                </div>
+                <div class="input-section">
+                    <label for="duree">Durée *</label>
+                    <select name="duree" id="duree" required >
+                        <option value="">Choisir la durée</option>
+                        <option value="14 jours">14 jours</option>
+                        <option value="16 jours">16 jours</option>
+                        <option value="20 jours">20 jours</option>
+                        <option value="21 jours">21 jours</option>
+                        <option value="25 jours">25 jours</option>
+                    </select>
+                    <span class="message-erreur">Veuillez choisir la durée</span>
+                </div>
+                <div class="input-section" >
+                    <label for="nbPassagerAdulte">Nombre de passagers Adultes *</label>
+                    <input type="number" id="nbPassagerAdulte" name="nbPassagerAdulte" required placeholder="18 ans +" min="1" max="10">
+                    <span class="message-erreur">Veuillez entrer le nombre de passager</span>
+                </div>
+                <div class="input-section">
+                    <label for="nbPassagerEnfant">Nombre de passagers Enfants* </label>
+                    <input type="number" id="nbPassagerEnfant" name="nbPassagerEnfant" required placeholder=" 2 - 17 ans" min="0" max="10">
+                    <span class="message-erreur">Veuillez entrer le nombre de passager</span>
+                </div> 
+            </section>
+                
+            <!--------------COORDONNÉES---------->
+                
+            <section class="info-client" data-section="1">
+                <h2>Étape 2- Coordonnées du passager principal</h2>
+                <small>* Les champs obligatoires</small>  
+                <div class="input-section">
+                    <label for="salutation">
+                        <input type="radio" id="salutation" name="titre" value="mr" checked>Mr.
+                   
+                 
+                        <input type="radio" id="salutation" name="titre" value="mme">Mme
+                  
+                
+                        <input type="radio" id="salutation" name="titre" value="mlle">Mlle
+                    </label>
+                </div>
+                <div class="input-section">
+                    <label for="nom">Nom Complet *</label>
+                    <input type="text" id="nom" name="nom" placeholder=" Prénom et Nom"  minlength="3" maxlength="35" pattern="^\w[^0-9]+$" required>
+                    <span class="message-erreur">Veuillez saisir votre nom</span>
+                </div>
+                <div class="input-section">
+                    <label for="dateNaissance">Date de naisssance *</label>
+                    <input type="date" id="dateNaissance" name="dateNaissance" max= "2007-03-01" required>
+                    <span class="message-erreur">Veuillez saisir votre date de naisssance</span>
+                </div>
+                <div class="input-section">
+                    <label for="adresse">Adresse *</label>
+                    <input type="text" id="adresse" name="adresse"  maxlength="60" required>
+                    <span class="message-erreur">Veuillez entrer une adresse valide</span>
+                </div>
+                <div class="input-section">
+                    <label for="ville">Ville *</label>
+                    <input type="text" id="ville" name="ville" minlength="2" maxlength="45" pattern="^\w[^0-9]+$" required>
+                    <span class="message-erreur">Veuillez saisir la ville</span>
+                </div>
+                <div class="input-section">
+                    <label for="province">Province *</label>
+                    <input type="text" id="province" name="province" minlength="2" maxlength="45" pattern="^\w[^0-9]+$" required>
+                    <span class="message-erreur">Veuillez saisir la province</span>
+                </div>
+                <div class="input-section">
+                    <label for="codePostal">Code postal *</label>
+                    <input type="text" id="codePostal" name="codePostal" placeholder="A1A 1A1" pattern="^([a-zA-Z]\d[a-zA-Z])\s?(\d[a-zA-Z]\d)$" required>
+                    <span class="message-erreur">Le code postal est non valide</span>
+                </div>
+                <div class="input-section">
+                    <label for="courriel">Courriel *</label>
+                    <input type="email" id="courriel" name="email" placeholder="abc01@gmail.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$
+                    " required>
+                    <span class="message-erreur">Le courriel est non valide</span>
+                </div>
+                <div class="input-section">
+                    <label for="telephone">Numéro de téléphone *</label>
+                    <input type="tel" id="telephone" name="numeroTel" pattern="^\(?(\d{3})\)?\s?-?(\d{3})\s?-?(\d{4})$" required>
+                    <span class="message-erreur">Le numéro est non valide</span>
+                </div>
+            </section>
+                
+            <!---------------PAIEMENT----------->
+                
+            <section class="paiement" data-section="2">
+                <h2>Étape 3- Renseignement pour le paiement</h2>
+                <small>* Les champs obligatoires</small>  
+                <div class="input-section">
+                    <label for="memeAdresse">
+                        <input type="checkbox" id="memeAdresse" name="memeAdresse"> Même Adresse que passager principal
+                    </label>
+                </div>
+                <div class="input-section">
+                    <label for="nomDetenteur">Nom du détenteur de la carte *</label>
+                    <input type="text" id="nomDetenteur" name="nomDetenteur" placeholder=" Prénom et Nom" minlength="3" maxlength="35" pattern="^\w[^0-9]+$" required>
+                    <span class="message-erreur">Veuillez saisir votre nom</span>
+                </div>
+                <div class="input-section">
+                    <label for="modePaiement">Type de la carte *</label>
+                    <select name="modePaiement" id="modePaiement" required >
+                        <option value="" >choisir une option </option>
+                        <option value="visa">Visa</option>
+                        <option value="masterCard" >MasterCard</option>
+                        <option value="americanExpress">AmericanExpress</option>
+                    </select>
+                    <span class="message-erreur">Veuillez choisir une option</span>
+                 </div>
+                <div class="input-section">
+                    <label for="numeroCarte">Numéro de la carte *</label>
+                    <input type="text" id="numeroCarte" name="numeroCarte" placeholder="Format: 1111 2222 3333 4444" pattern="^(\d{4})\s?(\d{4})\s?(\d{4})\s?(\d{4})$"  maxlength="16">
+                    <span class="message-erreur">Numéro de carte invalide</span>
+                </div>
+                <div class="input-section">
+                    <label for="expiration">Expiration *</label>
+                    <input type="month" id="expiration" name="expiration" min="2025-03" max="2028-12" required>
+                    <span class="message-erreur">Veuillez sélectionner une date</span>
+                </div>
+                <div class="input-section">
+                    <label for="numeroVerification">Numéro de vérification *</label>
+                    <input type="text" id="numeroVerification" name="numeroVerification" pattern="^\d{3}$" required>
+                    <span class="message-erreur">Veuillez entrez 3 chiffres</span>
+                </div>
+            </section>
+                
+            <!-----------RÉSUMÉ----------->
+                
+            <section class="resume" data-section="3" >
+                <h2>Étape 4- Résumé de la réservation</h2>
+                    
+                <div class="resume-choixDestination">
+                    <h3>Destination</h3>
+                    <p>Date de départ le: <strong><span data-champ="dateDepart"></span></strong></p>
+                    <p>De: <span data-champ="departDe"></span></p>
+                    <p>À destination: <span data-champ="destination"></span></p>
+                    <p>Durée de: <span data-champ="duree"></span></p>
+                    <p>Passagers adultes: <span data-champ="nbPassagerAdulte"></span></p>
+                    <p>Passagers enfants: <span data-champ="nbPassagerEnfant"></span></p>
+                </div>
+                <div class="resume-client">
+                    <h3>Informations du passager</h3>
+                    <p>Titre: <span data-champ="titre"></span></p>
+                    <p>Nom complet: <span data-champ="nom"></span></p>
+                    <p>Date de naissance: <span data-champ="dateNaissance"></span></p>
+                    <p>Adresse: <span data-champ="adresse"></span></p>
+                    <p>Ville: <span data-champ="ville"></span></p>
+                    <p>Province: <span data-champ="province"></span></p>
+                    <p>Code Postal: <span data-champ="codePostal"></span></p>
+                    <p>Courriel: <span data-champ="email"></span></p>
+                    <p>Numéro de téléphone: <span data-champ="numeroTel"></span></p>
+                </div>
+                <div class="resume-paiement">
+                    <h3>Facturation</h3>
+                    <p>Nom du détenteur: <span data-champ="nomDetenteur"></span></p>
+                    <p>Type de la carte: <span data-champ="modePaiement"></span></p>
+                    <p>Numéro de la carte: <span data-champ="numeroCarte"></span><p>
+                    <p>Même adresse: <span data-champ="memeAdresse"></span></p> 
+                </div>
+            </section>
+                    
+            <div class="boutonForm-navigation">
+                <div class="bouton" data-direction="-1">Retour</div>
+                <div class="bouton" data-direction="1">Continuer</div>
+                <input class="bouton" type="submit" value="Réserver">
+            </div>
+            <div class="msg-merci invisible">
+                <p>Merci d'avoir réservé avec Air Apiness!</p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Moukda Phaengvixay &copy; 2025 Tous droits réservés</p>
+    </footer>
+</body>
+</html>
+        

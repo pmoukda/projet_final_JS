@@ -1,0 +1,25 @@
+/* styliser la section résumé*/
+[data-page="formulaire"]{
+    & .resume{
+        flex-direction: column;
+        line-height: 1;
+      
+        & h3{
+            font-style: italic;
+            font-size: var(--taille-grand1x);
+            text-decoration: underline;
+        }
+        
+        & > div{
+            margin-top: var(--espacement-large); 
+        }
+
+        & p{
+            font-style: italic;
+        }
+
+        & span{
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+/*=========Typographie=========*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*========Base========*/
+@import url("bases/root.css");
+@import url("bases/general.css");
+
+
+/*=======Components==========*/
+@import url("components/nav-principale.css");
+@import url("components/pied-site.css");
+@import url("components/bouton.css");
+
+
+/*==========Layout===========*/
+@import url("layout/grille-destinations.css");
+
+
+/*==========Pages===========*/
+/***accueil***/
+@import url("pages/accueil/main.css");
+@import url("pages/accueil/section-entete.css");
+@import url("pages/accueil/details.css");
+@import url("pages/accueil/pays.css");
+
+/***formulaire***/
+@import url("pages/formulaire/form.css");
+@import url("pages/formulaire/mainForm.css");
+@import url("pages/formulaire/input-section.css");
+@import url("pages/formulaire/validation.css");
+@import url("pages/formulaire/choix-destination.css");
+@import url("pages/formulaire/info-client.css");
+@import url("pages/formulaire/paiement.css");
+@import url("pages/formulaire/resume.css");
+@import url("pages/formulaire/msg-merci.css");
+
+
+/***apropos***/
+@import url("pages/apropos/main.css");
+@import url("pages/apropos/carrousel.css");
+@import url("pages/apropos/boiteModale.css");
+@import url("pages/apropos/img-texte.css");
+
+/*** contact***/
+@import url("pages/contact/form.css");
+
+
+/*=======exceptions===========*/
+@import url("exception/exceptions.css");
+
+
+
+

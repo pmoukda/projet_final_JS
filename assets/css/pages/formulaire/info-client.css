@@ -1,0 +1,18 @@
+[data-page ="formulaire"]{
+    /*largeur du conteneur section input dans la section choix destination*/
+    & .info-client {
+        
+        & > div:first-of-type {
+            flex-basis: calc(100%);
+            gap:20px;
+            
+            
+            & > label {
+                width: 25px; 
+                padding-right: 50px; 
+            }
+        }
+        
+    }
+    
+}

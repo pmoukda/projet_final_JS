@@ -1,0 +1,22 @@
+[data-page="contact"]{
+    & > * + * {
+        margin-top: var(--espacement-tres-large);
+      }
+   
+    & form {
+       
+        & > label{
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;  
+        }
+        
+        & > input:not([type="submit"]){
+            border: 2px solid black;
+            height: 10ch;
+        }
+        & textarea{
+            border: 2px solid black;
+        }
+    }
+}

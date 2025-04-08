@@ -1,0 +1,19 @@
+/*balise main dans la page formulaire*/
+[data-page="formulaire"]
+ {
+  & > * + * {
+    margin-top: var(--espacement-tres-large);
+  }
+
+  & main {
+    width: calc(65% - 20px);
+
+    & h1 {
+      text-align: center;
+    }
+
+    & section {
+      flex-basis: calc(100%);
+    }
+  }
+}

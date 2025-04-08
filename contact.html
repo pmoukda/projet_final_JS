@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moukda Phaengvixay">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/pages/contact.js" type="module"></script>
+    <title>Contact</title>
+    
+</head>
+<body data-page="contact">
+    <header>
+        <nav class="nav-principale">
+            <div class="nav-liste">
+                <img class="logo" src="assets/img/SVG/logo.svg" alt="logo" >
+            </div>
+            <ul class="nav-liste">
+                <!--<li><a href=""></a></li>-->
+            </ul>
+            <ul class="mode-ecran">
+                <li data-mode-option="nuit">
+                   <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/bright-moon--v1.png" alt="bright-moon--v1"/>
+               </li>
+               <li data-mode-option="jour" class="active">
+                   <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/sun--v1.png" alt="sun--v1"/>
+               </li> 
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contactez-Nous</h1>
+        <form action="" method="get">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Courriel</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="30" cols="80"></textarea>
+            
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <p>Moukda Phaengvixay &copy; 2025 Tous droits réservés</p>
+    </footer>
+</body>
+</html>

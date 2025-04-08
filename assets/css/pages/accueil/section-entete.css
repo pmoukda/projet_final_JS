@@ -1,0 +1,15 @@
+[data-page = "accueil"]{
+    .section-entete{
+        display: flex;
+        justify-content: end;
+        gap: var(--espacement-courant);
+        padding-bottom: 30px;
+      
+        & h1{
+            flex-grow: 1;
+            font-size: var(--taille-grand2x);
+            padding-right: var(--espacement-courant-moyen) ;
+        }
+    }
+}
+

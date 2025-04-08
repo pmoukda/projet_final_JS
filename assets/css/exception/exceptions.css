@@ -1,0 +1,10 @@
+.invisible {
+    display: none !important;
+}
+
+.disabled {
+    border: 3px solid var(--couleur-fond-desactive);
+    background-color: unset;
+    color: var(--couleur-police-desactive);
+    pointer-events: none;
+}

@@ -1,0 +1,9 @@
+
+footer{
+    padding: var(--espacement-petitRem);
+    margin-top: var(--espacement-tres-large);
+    background-color: var(--couleur-nav);
+    text-align: center;
+    font-size: var(--taille-tres-petit);
+    border-top: 1px solid #f2efec51;
+}

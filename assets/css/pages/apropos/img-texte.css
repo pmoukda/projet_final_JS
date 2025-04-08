@@ -1,0 +1,112 @@
+/* Page à propos*/
+.img-texte{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 0px 25px 25px;
+    background-color: #f2efec51;
+    text-align: justify;
+
+    & img{
+        max-height: 80ch;
+        max-width: 40%;
+        border-radius: 5px;
+        object-fit: cover; 
+    }
+    
+    & > div {
+       
+        & p{
+            font-size: 22px;  
+        }
+        
+        & .bouton.contact{
+            max-width: 15ch;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: var(--espacement-tres-large);
+            text-decoration: none; 
+            color: inherit; 
+            background-color: var(--couleur-accent);
+            box-shadow: 5px 5px 8px rgb(69, 59, 59);
+            transition: all 1.5s ease-in-out;
+          
+         
+            &:hover{
+                color: var(--couleur-primaire);
+                background-color: var(--couleur-accent);
+                transform: rotate(360deg) translateX(50px);
+                border-radius: 50%;
+               
+            }
+        }
+        
+    }
+
+    &.petit{
+        align-items: center;
+        border-bottom: 1px solid #ababc3;
+        padding: 15px 0;
+        background-color: unset;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    
+        
+        & img{
+            margin-top: 0;
+            max-width: 30%;
+            max-height: 35ch;
+            box-shadow: 3px 5px 8px grey;
+            border: 10px solid #f0f0f2;
+            border-radius: 30px;  
+        }
+        
+        & p{
+            max-width: 110ch;
+            align-items: center;
+            margin-bottom:40px ;
+        }
+        
+    }
+    
+    &.msg-fin{
+        align-items: center;
+    }
+    
+}
+
+
+@media screen and (max-width:1430px) {
+    .img-texte img{
+        min-height: 60ch;
+        width: 100%;
+        object-fit: cover;  
+    }
+    
+    .img-texte p{
+        max-width: 50ch;
+    }
+    
+}
+
+@media screen and (max-width:1180px) {
+
+    .img-texte{
+        flex-direction: column;
+        
+        &.petit img, img{
+            max-width: 100%;  
+        }
+        
+        & p{
+            order: 1;
+            padding-bottom: 20px; 
+            max-width: 80ch;  
+        }
+    }
+}
+
+
+
