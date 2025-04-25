@@ -1,9 +1,9 @@
 form{
     display: flex;
     flex-direction: column;
-    font-size: var(--taille-grand);
     gap: var(--espacement-courant);
     box-sizing: border-box;
+    
 }
 
 [data-page="formulaire"] {
@@ -19,7 +19,7 @@ form{
             margin-bottom: var(--espacement-large);
             margin-top: var(--espacement-large);
             font-weight: 600;
-            font-size: var(--taille-grand); 
+            font-size: var(--taille-regulier); 
             
             
             &  > div{
@@ -41,22 +41,24 @@ form{
         flex-wrap: wrap ;
         gap: var(--espacement-petit);
         box-sizing: border-box;
-        border: 5ch solid #93c3d3;
+        border: 3ch solid #93c3d3;
         border-radius: 5px;
-        padding: 40px 40px 80px;
-        margin-bottom: 20px;
+        padding: 30px 30px ;
+        margin-bottom: var(--espacement-courant);
         box-shadow: 0 2px 6px #00000080;
         
         /*occuper la pleine largeur*/
-        & > h2, h3{
+        & > h2{
+            flex-basis: 100%; 
+        }
+        
+        & small{
+            font-style: italic;
+            font-size: var(--taille-tres-petit); 
             flex-basis: 100%; 
         }
     }
-    & small{
-        font-style: italic;
-    }
-    
-
+  
 } 
 
 

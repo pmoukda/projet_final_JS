@@ -42,7 +42,7 @@ function init() {
   // Boucler sur chaque élément du menu pour modifier la police de caractère
   menuItems.forEach(function (item) {
     if (item.href == pageCourante) {
-      item.style.fontSize = "24px"; // Changer la grosseur du texte
+      item.style.fontSize = "20px"; // Changer la grosseur du texte
       item.style.textTransform = "uppercase"; // Mettre en majuscule
       item.style.fontWeight = "900"; // Grossir les caractères de police
       item.style.textDecoration = "underline"; // changer la couleur pour un bleu très foncé

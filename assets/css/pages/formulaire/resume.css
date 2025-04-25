@@ -6,8 +6,9 @@
       
         & h3{
             font-style: italic;
-            font-size: var(--taille-grand1x);
+            font-size: var(--taille-moyen);
             text-decoration: underline;
+            
         }
         
         & > div{

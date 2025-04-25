@@ -23,16 +23,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;  
+    margin-bottom: var(--espacement-tres-large);  
 }
 /* styliser boutons navigations*/
 .bouton{
     background-color: var(--couleur-bouton);
     max-width: 25ch;
-    padding: 20px 50px;
+    padding: 15px 35px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 28px;
+    font-size: var(--taille-moyen);
     font-weight: 600; 
     
     
@@ -46,7 +46,7 @@ form input[type="submit"] {
     
     text-transform: uppercase;
     background-color: #F3C623;
-    padding: 20px 80px;
+    padding: 20px 50px;
     border: none;
     border-radius: 35px;
     box-shadow: 5px 5px 8px rgb(69, 59, 59);

@@ -3,27 +3,22 @@
     max-width: 100%;
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: var(--espacement-mL);
     padding: 0px 25px 25px;
     background-color: #f2efec51;
-    text-align: justify;
+    
 
     & img{
-        max-height: 80ch;
-        max-width: 40%;
+        max-height: 60ch;
+        max-width: 50%;
         border-radius: 5px;
         object-fit: cover; 
     }
     
     & > div {
        
-        & p{
-            font-size: 22px;  
-        }
-        
         & .bouton.contact{
-            max-width: 15ch;
-            padding: 20px;
+            padding: 10px 20px;
             border-radius: 20px;
             margin-top: var(--espacement-tres-large);
             text-decoration: none; 
@@ -49,30 +44,29 @@
         border-bottom: 1px solid #ababc3;
         padding: 15px 0;
         background-color: unset;
-        justify-content: space-between;
-        margin-right: auto;
-        margin-left: auto;
-    
         
+     
         & img{
             margin-top: 0;
-            max-width: 30%;
-            max-height: 35ch;
+            max-width: 25%;
+            max-height: 40ch;
             box-shadow: 3px 5px 8px grey;
             border: 10px solid #f0f0f2;
             border-radius: 30px;  
         }
         
         & p{
-            max-width: 110ch;
+            max-width: 90ch;
             align-items: center;
-            margin-bottom:40px ;
         }
         
     }
     
     &.msg-fin{
         align-items: center;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
     }
     
 }

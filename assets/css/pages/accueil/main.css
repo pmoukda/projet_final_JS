@@ -5,21 +5,20 @@
 
     & main{
         display: flex;
-        justify-content: space-evenly;
-        width: calc(98% - 20px);
-        gap: var(--espacement-largeRem);
+        justify-content: space-between;
+        width: calc(95% - 20px);
+        gap: var(--espacement-moyen);
         
         
         & > section{
-            flex-basis: calc(50% - 20px);
+            flex-basis: calc(55% - 20px);
             padding: var(--espacement-petit);
             box-sizing: border-box;
           
         }
         & > aside{
-            margin: 25px 80px 80px;
-            padding: var(--espacement-courant-moyen);
-            max-width: 35%;
+            padding: var(--espacement-courant);
+            max-width: 30%;
             background-color:var(--couleur-bouton);
             box-sizing: border-box;
             position: relative;  

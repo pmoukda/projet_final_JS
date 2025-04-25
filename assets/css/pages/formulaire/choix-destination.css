@@ -6,10 +6,6 @@
         & > .input-section{
             min-width: 30%;
         } 
-        
-        & small{
-            flex-basis: 100%;  
-        } 
     }
 
 }

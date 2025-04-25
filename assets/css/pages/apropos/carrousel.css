@@ -58,7 +58,7 @@
     /*bouton direction carrousel*/
     & [data-direction]{
         position: absolute;
-        font-size: var(--espacement-tres-large);
+        font-size: var(--taille-grand2x);
         background-color: #000000cc;
         color: #fff;
         padding: 10px;

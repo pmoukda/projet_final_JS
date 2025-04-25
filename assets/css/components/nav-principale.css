@@ -1,15 +1,15 @@
 .nav-principale{
     display: flex;
     justify-content: space-between;
-    padding: var(--espacement-regulierRem);
+    padding: var(--espacement-petitRem);
     background-color: var(--couleur-nav);
     gap: var(--espacement-xlRem);
     box-shadow: 2px 2px 8px rgb(128, 128, 128, 0.273);
     
     & .logo{
-        max-width: 150px;
-        max-height: 150px;
-        margin-left: var(--espacement-moyen);
+        max-width: 100px;
+        max-height: 100px;
+        margin-left: var(--espacement-courant);
         animation: zoomIn 3s backwards;
        
     }
@@ -34,7 +34,7 @@
     }
     
     & a{
-        font-size: var(--espacement-regulierRem);
+        font-size: var(--taille-regulier);
         text-decoration: none; 
         color:var(--couleur-texte);
         transition: all 450ms ease-in-out;

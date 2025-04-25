@@ -29,49 +29,46 @@
         height: 100%;
         background-color:#333333d3 ;
         opacity: 1;
-        transition: opacity 0.6s 0.3s ease-out;
+        transition: opacity 0.6s 0.3s ease-in-out;
         
     }
     /* styliser le contenu et  le positionner*/
     & .contenu-modale{
         opacity: 1;
-        max-width: 600px;
+        max-width: 520px;
         min-width: 300px;
-        padding: 30px;
+        min-height: 300px;
+        padding:var(--espacement-courant-moyen) ;
         background-color: var(--couleur-primaire);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, calc(-50% - 50px));/*faire descendre la boite modale d'en haut pour centrer dans l'écran et remonter une fois fermer avec l'effet de la transition*/
-        transition: opacity 0.6s ease-out, transform 0.6s ease-in-out;
+        transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
         
         
         & img{
             border-radius: 10px;
-            object-fit: cover;
-            
+            object-fit: cover; 
         }
         
         & h1{
             border-top: 2px solid rgb(79, 57, 57);
-            padding: 10px;
-            margin-bottom: 20px;
+            padding: var(--espacement-petit);
+            margin-bottom: var(--espacement-courant);
         }
         
         & span{
-            font-size: 24px;
-            font-style: oblique;
-            
+            font-style: oblique;  
         }
         
         & p{
-            line-height: 1;
-            
+            line-height: 1; 
         }
     }
     /* styliser et positionner le bouter fermer de la boîte modale*/
     &  .btnFermer-boite-modale{
-        font-size: 35px;
+        font-size: var(--taille-grand1x);
         padding: 2px 10px;
         border: none;
         border-radius: 5px;

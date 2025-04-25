@@ -2,10 +2,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-size: var(--taille-regulier);
+    font-size: var(--taille-petit);
     line-height: 1.5625;
     font-family: "Manrope", serif;
     font-weight: 500;
@@ -14,11 +15,11 @@ body{
     min-height: 100dvh;
     color:var(--couleur-texte);
     background-color: var(--couleur-primaire);
-    box-sizing: border-box;
+ 
    
 }
 main{
-    flex: 1;
+    flex-grow: 1;
     margin-right: auto;
     margin-left: auto;
 }

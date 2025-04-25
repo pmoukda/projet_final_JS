@@ -1,13 +1,13 @@
 [data-page = "accueil"]{
-    .section-entete{
+    & .section-entete{
         display: flex;
         justify-content: end;
-        gap: var(--espacement-courant);
+        gap: var(--espacement-petit);
         padding-bottom: 30px;
       
         & h1{
             flex-grow: 1;
-            font-size: var(--taille-grand2x);
+            font-size: var(--taille-grand1x);
             padding-right: var(--espacement-courant-moyen) ;
         }
     }
